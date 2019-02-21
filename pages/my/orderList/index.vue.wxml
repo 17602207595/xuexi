@@ -1,0 +1,19 @@
+<import src="/components/serviceC.vue.wxml" /><template name="cb567132">
+  <view class="_div data-v-6e87674e order" wx:if="{{list != null}}">
+    <view wx:if="{{list.length>0}}" class="_ul data-v-6e87674e">
+      <view wx:key="i" key="{{i}}" wx:for="{{list}}" wx:for-index="i" wx:for-item="item" class="_li data-v-6e87674e">
+        <view class="_h4 data-v-6e87674e border_bottom">订单编号：{{item.out_trade_no}}</view>
+        <view class="_div data-v-6e87674e info">
+          <view class="_h5 data-v-6e87674e">{{item.category_title}}</view>
+          <view class="_p data-v-6e87674e">金额：{{item.money}}元</view>
+          <view wx:if="{{item.payment_time}}" class="_p data-v-6e87674e">支付时间：{{item.payment_time}}</view>
+        </view>
+        <view class="_div data-v-6e87674e status"><label wx:if="{{item.status == 0}}" class="_span data-v-6e87674e">等待处理</label> <label wx:if="{{item.status == 1}}" class="_span data-v-6e87674e">材料收集中</label> <label wx:if="{{item.status == 2}}" class="_span data-v-6e87674e">材料补充中</label> <label wx:if="{{item.status == 3}}" class="_span data-v-6e87674e">材料齐全报送中</label> <label wx:if="{{item.status == 4}}" class="_span data-v-6e87674e on">办理完成</label></view>
+      </view>
+    </view>
+    <view class="_div data-v-6e87674e nodata" wx:else>
+      <image src="/static/img/nodata.jpg" class="_img data-v-6e87674e"></image>
+      <view class="_p data-v-6e87674e">空空如也~</view>
+    </view> <template data="{{...$root[$kk+'0'], $root}}" is="854f9e72"></template>
+  </view>
+</template>

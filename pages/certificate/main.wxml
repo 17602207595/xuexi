@@ -1,0 +1,1 @@
+<import src="/pages/certificate/index.vue.wxml" /><template is="5f65ee70" data="{{ ...$root['0'], $root }}"/>

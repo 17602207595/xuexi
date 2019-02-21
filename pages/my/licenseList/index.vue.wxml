@@ -1,0 +1,23 @@
+<import src="/components/serviceC.vue.wxml" /><template name="06e4404c">
+  <view class="_div data-v-102d5d7e license" wx:if="{{data}}">
+    <block wx:if="{{data}}">
+      <view class="_div data-v-102d5d7e company">
+        <view class="_p data-v-102d5d7e">营业执照号码：{{data.license_number}}</view>
+        <view class="_p data-v-102d5d7e">公司名称：{{data.company_name}}</view>
+      </view>
+      <view class="_ul data-v-102d5d7e">
+        <view wx:key="i" key="{{i}}" wx:for="{{list}}" wx:for-index="i" wx:for-item="item" class="_li data-v-102d5d7e">
+          <view class="_div data-v-102d5d7e card">
+            <view class="_h5 data-v-102d5d7e">牌照：{{item.type_title}}</view>
+            <view class="_p data-v-102d5d7e">办理时间：{{item.start_time}}</view>
+            <view class="_p data-v-102d5d7e">到期时间：{{item.end_time}}</view>
+          </view>
+        </view>
+      </view>
+    </block>
+    <view class="_div data-v-102d5d7e nodata" wx:else>
+      <image src="/static/img/nodata.jpg" class="_img data-v-102d5d7e"></image>
+      <view class="_p data-v-102d5d7e">空空如也~</view>
+    </view> <template data="{{...$root[$kk+'0'], $root}}" is="854f9e72"></template>
+  </view>
+</template>

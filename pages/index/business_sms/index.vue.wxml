@@ -1,0 +1,19 @@
+<import src="/components/switchTab.vue.wxml" />
+<import src="/components/basicInfo.vue.wxml" />
+<import src="/components/contactInfo.vue.wxml" />
+<import src="/components/equityInfo.vue.wxml" />
+<import src="/components/uploadSms.vue.wxml" /><template name="36e457ef">
+  <view class="_div data-v-5659f85c icp_wrap" wx:if="{{isRender}}"><template data="{{...$root[$kk+'0'], $root}}" is="d805ae10"></template>
+    <view class="_div data-v-5659f85c form_wrap">
+      <view class="_div data-v-5659f85c isp isp_1" hidden="{{!(activeIndex==0)}}"><template bindgetBasic="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'1'], $root}}" is="3a29a5b3"></template></view>
+      <view class="_div data-v-5659f85c isp isp_2" hidden="{{!(activeIndex==1)}}"><template bindgetContact="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'2'], $root}}" is="3b5197e5"></template></view>
+      <view class="_div data-v-5659f85c isp isp_3" hidden="{{!(activeIndex==2)}}"><template bindgetEquity="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'3'], $root}}" is="45ab76ec"></template></view>
+      <view class="_div data-v-5659f85c isp isp_4" hidden="{{!(activeIndex==3)}}"><template bindgetUpload="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'4'], $root}}" is="4cdc7d4f"></template></view>
+      <view class="_div data-v-5659f85c btn_wrap">
+        <view class="_div data-v-5659f85c btn-style bg-btn" hidden="{{!(activeIndex != 0)}}" bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}">上一步</view>
+        <view class="_div data-v-5659f85c btn-style" hidden="{{!(activeIndex != 3)}}" bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}">下一步</view>
+        <view class="_div data-v-5659f85c btn-style" hidden="{{!(activeIndex == 3)}}" bindtap="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}">提交</view>
+      </view>
+    </view>
+  </view>
+</template>

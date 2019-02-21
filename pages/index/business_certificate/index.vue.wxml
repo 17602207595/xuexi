@@ -1,0 +1,67 @@
+<import src="/components/switchTab.vue.wxml" />
+<import src="/components/contactInfo.vue.wxml" /><template name="ebb942a6">
+  <view class="_div data-v-304fc1cc certificate_wrap" wx:if="{{isRender}}"><template data="{{...$root[$kk+'0'], $root}}" is="d805ae10"></template>
+    <view class="_div data-v-304fc1cc form_wrap">
+      <view class="_div data-v-304fc1cc certi_1" hidden="{{!(activeIndex==0)}}"><template bindgetContact="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'1'], $root}}" is="3b5197e5"></template></view>
+      <view class="_div data-v-304fc1cc certi_2" hidden="{{!(activeIndex==1)}}">
+        <view class="_div data-v-304fc1cc _title">
+          <view class="_p data-v-304fc1cc">请依次上传：营业执照扫描件、证书原件扫描件 </view>
+          <view class="_div data-v-304fc1cc certi_imgs">
+            <view class="_ul data-v-304fc1cc">
+              <view class="_li data-v-304fc1cc">
+                <view class="_div data-v-304fc1cc imgs_sb2">
+                  <view wx:if="{{formCertificate.business_license_img}}" class="_div data-v-304fc1cc img_wrap">
+                    <image src="{{imgPrefix+formCertificate.business_license_img}}" bindtap="handleProxy" mode="aspectFill" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_img data-v-304fc1cc"></image>
+                    <view bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_b data-v-304fc1cc">X</view>
+                  </view>
+                  <image wx:else src="/static/img/bg_imga.png" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_img data-v-304fc1cc"></image>
+                </view>
+              </view>
+              <view class="_li data-v-304fc1cc">
+                <view class="_div data-v-304fc1cc imgs_sb2">
+                  <view wx:if="{{formCertificate.certificate_img}}" class="_div data-v-304fc1cc img_wrap">
+                    <image src="{{imgPrefix+formCertificate.certificate_img}}" bindtap="handleProxy" mode="aspectFill" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_img data-v-304fc1cc"></image>
+                    <view bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}" class="_b data-v-304fc1cc">X</view>
+                  </view>
+                  <image wx:else src="/static/img/bg_imgb.png" bindtap="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}" class="_img data-v-304fc1cc"></image>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="_div data-v-304fc1cc _title">
+          <view class="_p data-v-304fc1cc">2018年12月份财务报表（资产负债表、利润表） </view>
+          <view class="_div data-v-304fc1cc certi_imgs">
+            <view class="_ul data-v-304fc1cc">
+              <view class="_li data-v-304fc1cc">
+                <view class="_div data-v-304fc1cc imgs_sb2">
+                  <view wx:if="{{formCertificate.asset_liability_img}}" class="_div data-v-304fc1cc img_wrap">
+                    <image src="{{imgPrefix+formCertificate.asset_liability_img}}" bindtap="handleProxy" mode="aspectFill" data-eventid="{{'7'}}" data-comkey="{{$k}}" class="_img data-v-304fc1cc"></image>
+                    <view bindtap="handleProxy" data-eventid="{{'8'}}" data-comkey="{{$k}}" class="_b data-v-304fc1cc">X</view>
+                  </view>
+                  <image wx:else src="/static/img/bg_imgc.png" bindtap="handleProxy" data-eventid="{{'9'}}" data-comkey="{{$k}}" class="_img data-v-304fc1cc"></image>
+                </view>
+              </view>
+              <view class="_li data-v-304fc1cc">
+                <view class="_div data-v-304fc1cc imgs_sb2">
+                  <view wx:if="{{formCertificate.profit_img}}" class="_div data-v-304fc1cc img_wrap">
+                    <image src="{{imgPrefix+formCertificate.profit_img}}" bindtap="handleProxy" mode="aspectFill" data-eventid="{{'10'}}" data-comkey="{{$k}}" class="_img data-v-304fc1cc"></image>
+                    <view bindtap="handleProxy" data-eventid="{{'11'}}" data-comkey="{{$k}}" class="_b data-v-304fc1cc">X</view>
+                  </view>
+                  <image wx:else src="/static/img/bg_imgd.png" bindtap="handleProxy" data-eventid="{{'12'}}" data-comkey="{{$k}}" class="_img data-v-304fc1cc"></image>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-304fc1cc btn_wrap">
+        <view class="_div data-v-304fc1cc btn_wrap">
+          <view class="_div data-v-304fc1cc btn-style bg-btn" hidden="{{!(activeIndex != 0)}}" bindtap="handleProxy" data-eventid="{{'13'}}" data-comkey="{{$k}}">上一步</view>
+          <view class="_div data-v-304fc1cc btn-style" hidden="{{!(activeIndex != 1)}}" bindtap="handleProxy" data-eventid="{{'14'}}" data-comkey="{{$k}}">下一步</view>
+          <view class="_div data-v-304fc1cc btn-style" hidden="{{!(activeIndex == 1)}}" bindtap="handleProxy" data-eventid="{{'15'}}" data-comkey="{{$k}}">提交</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

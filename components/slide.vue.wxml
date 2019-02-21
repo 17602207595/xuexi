@@ -1,0 +1,12 @@
+<template name="ed2efb30">
+  <view class="_div data-v-0593db6f slider">
+    <swiper indicator-dots="{{indicator}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="handleProxy" lazy-load data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_swiper data-v-0593db6f">
+      <block wx:key="index" key="{{index}}" wx:for="{{imgUrls}}" wx:for-index="index" wx:for-item="item">
+        <swiper-item class="_swiper-item data-v-0593db6f">
+          <image src="{{imgPrefix+item.img}}" class="_image data-v-0593db6f slide-image" mode="scaleToFill"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="_div data-v-0593db6f indicator"><label wx:key="index" key="{{index}}" wx:for="{{imgUrls}}" wx:for-index="index" wx:for-item="item" class="_span data-v-0593db6f {{index == activeIndex ? 'on' : ''}}"></label></view>
+  </view>
+</template>

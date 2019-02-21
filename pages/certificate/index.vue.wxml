@@ -1,0 +1,31 @@
+<template name="5f65ee70">
+  <view class="_div data-v-14f51fa8 certificate">
+    <view class="_div data-v-14f51fa8 step_2" hidden="{{!(current == 0)}}">
+      <view class="_p data-v-14f51fa8">录入工商信息，享受免费到期提醒。</view> <input placeholder="请输入您的公司名称" disabled="{{isFilled}}" value="{{postData.company_name}}" bindinput="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_input data-v-14f51fa8" /> <input placeholder="请输入您的营业执照号码" disabled="{{isFilled}}" value="{{postData.license_number}}" bindinput="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_input data-v-14f51fa8" />
+    </view>
+    <view class="_div data-v-14f51fa8 step_1" hidden="{{!(current == 1)}}">
+      <view wx:key="i" key="{{i}}" wx:for="{{postData.text}}" wx:for-index="i" wx:for-item="item" class="_div data-v-14f51fa8">
+        <picker bindchange="handleProxy" range="{{natureArray}}" data-eventid="{{'3-'+i}}" data-comkey="{{$k}}" class="_picker data-v-14f51fa8">
+          <view class="_div data-v-14f51fa8  nature"><input disabled placeholder="企业性质" value="{{natureVal[i]}}" bindinput="handleProxy" data-eventid="{{'2-'+i}}" data-comkey="{{$k}}" class="_input data-v-14f51fa8" /></view>
+        </picker>
+        <picker mode="date" bindchange="handleProxy" class="_picker data-v-14f51fa8 date" data-eventid="{{'4-'+i}}" data-comkey="{{$k}}">
+          <view class="_p data-v-14f51fa8">到期时间</view>
+          <view class="_div data-v-14f51fa8  date_val">{{item.start_time}}</view>
+        </picker>
+        <picker mode="date" bindchange="handleProxy" class="_picker data-v-14f51fa8 date" data-eventid="{{'5-'+i}}" data-comkey="{{$k}}">
+          <view class="_p data-v-14f51fa8">到期时间</view>
+          <view class="_div data-v-14f51fa8  date_val">{{item.end_time}}</view>
+        </picker>
+      </view>
+      <view class="_div data-v-14f51fa8 add_btn" bindtap="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}"> +增加一个录入信息 </view>
+    </view>
+    <view class="_div data-v-14f51fa8 step_2" hidden="{{!(current == 2)}}">
+      <view class="_p data-v-14f51fa8">为避免错过年审期造成损失，绑定手机号可以定期接收到期提醒！</view> <input type="number" placeholder="请输入手机号" name="phone" maxlength="11" value="{{postData.phone}}" bindinput="handleProxy" data-eventid="{{'7'}}" data-comkey="{{$k}}" class="_input data-v-14f51fa8" /> <input type="number" placeholder="请输入验证码" name="code" class="_input data-v-14f51fa8 code" value="{{postData.code}}" bindinput="handleProxy" data-eventid="{{'8'}}" data-comkey="{{$k}}" /> <button bindtap="handleProxy" disabled="{{disable}}" class="_button data-v-14f51fa8 btn_code" data-eventid="{{'9'}}" data-comkey="{{$k}}">{{captcha}}</button>
+    </view>
+    <view class="_div data-v-14f51fa8 btn_wrap">
+      <view class="_div data-v-14f51fa8 btn-style bg-btn" hidden="{{!(current != 0)}}" bindtap="handleProxy" data-eventid="{{'10'}}" data-comkey="{{$k}}">上一步</view>
+      <view class="_div data-v-14f51fa8 btn-style" hidden="{{!(current != 2)}}" bindtap="handleProxy" data-eventid="{{'11'}}" data-comkey="{{$k}}">下一步</view>
+      <view class="_div data-v-14f51fa8 btn-style" hidden="{{!(current == 2)}}" bindtap="handleProxy" data-eventid="{{'12'}}" data-comkey="{{$k}}">提交</view>
+    </view>
+  </view>
+</template>

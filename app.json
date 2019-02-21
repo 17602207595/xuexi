@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/index/main",
+    "pages/login/main",
+    "pages/test/main",
+    "pages/my/licenseList/main",
+    "pages/certificate/list/main",
+    "pages/my/orderList/main",
+    "pages/my/bookList/main",
+    "pages/certificate/main",
+    "pages/index/order/main",
+    "pages/index/business_brand/main",
+    "pages/index/business_sms/main",
+    "pages/index/business_certificate/main",
+    "pages/index/business_icp/main",
+    "pages/index/business_isp/main",
+    "pages/my/main",
+    "pages/index/detail/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "black",
+    "backgroundColor":"#f2f2f2"
+  },
+  "tabBar":{
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "selectedColor": "#60af00",
+    "color":"#808080",
+    "list":[
+        {
+          "pagePath": "pages/index/main",
+          "iconPath": "/static/img/icon_home2.png",
+          "selectedIconPath": "/static/img/icon_home.png",
+          "text": "首页"
+        },
+        {
+          "pagePath": "pages/test/main",
+          "iconPath": "/static/img/icon_test2.png",
+          "selectedIconPath": "/static/img/icon_test.png",
+          "text": "合规自测"
+        },
+        {
+          "pagePath": "pages/certificate/main",
+          "iconPath": "/static/img/icon_search2.png",
+          "selectedIconPath": "/static/img/icon_search.png",
+          "text": "证书管理"
+        },
+        {
+          "pagePath": "pages/my/main",
+          "iconPath": "/static/img/icon_my2.png",
+          "selectedIconPath": "/static/img/icon_my.png",
+          "text": "我的"
+        }
+    ]
+  }
+}

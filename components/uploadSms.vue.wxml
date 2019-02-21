@@ -1,0 +1,36 @@
+<template name="4cdc7d4f">
+  <view class="_div data-v-bbd40a54 upload_info">
+    <view class="_div data-v-bbd40a54 _title">
+      <view class="_p data-v-bbd40a54">请依次上传：营业执照原件/扫描件相片、法人身份证原件/电信业务经营许可证原件/扫描件相片</view> <label class="_span data-v-bbd40a54 tip">(1086需要SP业务；95需要呼叫中心业务）)</label>
+      <view class="_div data-v-bbd40a54 imgs_1">
+        <view class="_div data-v-bbd40a54">
+          <view wx:if="{{formUpload.business_license_img}}" class="_div data-v-bbd40a54 img_wrap">
+            <image src="{{imgPrefix+formUpload.business_license_img}}" bindtap="handleProxy" mode="aspectFill" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_img data-v-bbd40a54"></image>
+            <view bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_b data-v-bbd40a54">X</view>
+          </view>
+          <image wx:else src="/static/img/bg_img1.png" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_img data-v-bbd40a54"></image>
+        </view>
+        <view class="_div data-v-bbd40a54">
+          <view wx:if="{{formUpload.identity_img}}" class="_div data-v-bbd40a54 img_wrap">
+            <image src="{{imgPrefix+formUpload.identity_img}}" bindtap="handleProxy" mode="aspectFill" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_img data-v-bbd40a54"></image>
+            <view bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_b data-v-bbd40a54">X</view>
+          </view>
+          <image wx:else src="/static/img/bg_img2.png" bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}" class="_img data-v-bbd40a54"></image>
+        </view>
+        <view class="_div data-v-bbd40a54">
+          <view wx:if="{{formUpload.licence_img}}" class="_div data-v-bbd40a54 img_wrap">
+            <image src="{{imgPrefix+formUpload.licence_img}}" bindtap="handleProxy" mode="aspectFill" data-eventid="{{'6'}}" data-comkey="{{$k}}" class="_img data-v-bbd40a54"></image>
+            <view bindtap="handleProxy" data-eventid="{{'7'}}" data-comkey="{{$k}}" class="_b data-v-bbd40a54">X</view>
+          </view>
+          <image wx:else src="/static/img/bg_img3.png" bindtap="handleProxy" data-eventid="{{'8'}}" data-comkey="{{$k}}" class="_img data-v-bbd40a54"></image>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-bbd40a54 _title">
+      <view class="_p data-v-bbd40a54">请填写3名人员的姓名、身份证号、手机联系方式</view>
+      <view class="_div data-v-bbd40a54 person">
+        <view class="_div data-v-bbd40a54 person_item" wx:key="n" key="{{n}}" wx:for="{{formUpload.personnel_info_text}}" wx:for-index="n" wx:for-item="item"><input placeholder="姓名" value="{{item.name}}" bindinput="handleProxy" data-eventid="{{'9-'+n}}" data-comkey="{{$k}}" class="_input data-v-bbd40a54" /> <input placeholder="身份证号" value="{{item.identity}}" bindinput="handleProxy" bindblur="handleProxy" data-eventid="{{'10-'+n}}" data-comkey="{{$k}}" class="_input data-v-bbd40a54" /> <input type="number" placeholder="电话号码" value="{{item.phone}}" bindinput="handleProxy" bindblur="handleProxy" data-eventid="{{'11-'+n}}" data-comkey="{{$k}}" class="_input data-v-bbd40a54" /></view>
+      </view>
+    </view>
+  </view>
+</template>

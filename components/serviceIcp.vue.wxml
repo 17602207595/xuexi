@@ -1,0 +1,42 @@
+<template name="5f70d27a">
+  <view class="_div data-v-9d31f45a service_info">
+    <view class="_div data-v-9d31f45a _title sb_wrap">
+      <view class="_p data-v-9d31f45a">公司近期为员工所上的社保证明（应加盖社保机构红章）</view>
+      <view class="_h4 data-v-9d31f45a">注：</view>
+      <view class="_div data-v-9d31f45a sb_tip"><label class="_span data-v-9d31f45a">1、社保证明应包含公司概况表中专人专岗的企业联系人、信息安全负责人、客服负责人等3名人员的社保证明</label> <label class="_span data-v-9d31f45a">2、社保证明需包含以下要素：公司名称、人员姓名、身份证号、缴纳社保期限、社保部门公章等；</label> <label class="_span data-v-9d31f45a">3、若公司员工采取劳务派遣形式，还需要提交双方签署的劳务派遣合同，以及劳务派遣机构的营业执照、劳务派遣经营许可证原件彩色扫描件；</label> <label class="_span data-v-9d31f45a"> 4、社保证明应为本次许可提交时一个月以内开具的且为最近连续三个月的社保证明。</label></view>
+      <view class="_div data-v-9d31f45a imgs_sb">
+        <view hidden="{{!(formService.social_security.length>0)}}" class="_ul data-v-9d31f45a">
+          <view wx:key="i" key="{{i}}" class="_li data-v-9d31f45a img_wrap" wx:for="{{formService.social_security}}" wx:for-index="i" wx:for-item="img">
+            <image src="{{imgPrefix+img}}" bindtap="handleProxy" mode="aspectFill" data-eventid="{{'0-'+i}}" data-comkey="{{$k}}" class="_img data-v-9d31f45a"></image>
+            <view bindtap="handleProxy" data-eventid="{{'1-'+i}}" data-comkey="{{$k}}" class="_b data-v-9d31f45a">X</view>
+          </view>
+        </view>
+        <view hidden="{{!(formService.social_security.length<5)}}" class="_div data-v-9d31f45a btn_upload">
+          <image src="/static/img/bg_img9.png" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_img data-v-9d31f45a"></image>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-9d31f45a service_icp">
+      <view class="_div data-v-9d31f45a _title">
+        <view class="_p data-v-9d31f45a">客户信息表</view>
+        <view class="_div data-v-9d31f45a imgs_sb2">
+          <view wx:if="{{formService.information_img}}" class="_div data-v-9d31f45a img_wrap">
+            <image src="{{imgPrefix+formService.information_img}}" bindtap="handleProxy" mode="aspectFill" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_img data-v-9d31f45a"></image>
+            <view bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_b data-v-9d31f45a">X</view>
+          </view>
+          <image wx:else src="/static/img/bg_imgf.png" bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}" class="_img data-v-9d31f45a"></image>
+        </view>
+      </view>
+      <view class="_div data-v-9d31f45a _title">
+        <view class="_p data-v-9d31f45a">域名证书彩色件</view>
+        <view class="_div data-v-9d31f45a imgs_sb2">
+          <view wx:if="{{formService.domain_certificate_img}}" class="_div data-v-9d31f45a img_wrap">
+            <image src="{{imgPrefix+formService.domain_certificate_img}}" bindtap="handleProxy" mode="aspectFill" data-eventid="{{'6'}}" data-comkey="{{$k}}" class="_img data-v-9d31f45a"></image>
+            <view bindtap="handleProxy" data-eventid="{{'7'}}" data-comkey="{{$k}}" class="_b data-v-9d31f45a">X</view>
+          </view>
+          <image wx:else src="/static/img/bg_imgg.png" bindtap="handleProxy" data-eventid="{{'8'}}" data-comkey="{{$k}}" class="_img data-v-9d31f45a"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

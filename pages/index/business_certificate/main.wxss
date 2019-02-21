@@ -1,0 +1,24 @@
+@import "../../../common/vendor.wxss";
+
+.certi_2 .certi_imgs.data-v-304fc1cc {
+  margin-bottom: 30rpx;
+  margin-top: 25rpx;
+}
+.certi_2 .certi_imgs ._ul.data-v-304fc1cc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.certi_2 .certi_imgs ._ul ._li.data-v-304fc1cc {
+  width: 335rpx;
+  height: 345rpx;
+  overflow: hidden;
+}
+.certi_2 .certi_imgs ._ul ._li ._img.data-v-304fc1cc {
+  width: 335rpx;
+  height: 345rpx;
+}
+.certi_2 .certi_imgs ._ul ._li .btn_upload.data-v-304fc1cc {
+  width: 335rpx;
+  height: 345rpx;
+}

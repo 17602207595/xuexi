@@ -1,0 +1,11 @@
+@import "../../common/vendor.wxss";
+
+._p.data-v-1de7af7a {
+  margin-top: 40%;
+  font-size: 28rpx;
+  padding: 0 60rpx;
+  text-align: center;
+}
+._button.data-v-1de7af7a {
+  margin-top: 60rpx;
+}

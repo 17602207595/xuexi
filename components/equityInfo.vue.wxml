@@ -1,0 +1,10 @@
+<template name="45ab76ec">
+  <view class="_div data-v-d0bcab76 equity_info" wx:if="{{formEquity.length>0}}">
+    <view class="_div data-v-d0bcab76 equity" wx:key="i" key="{{i}}" wx:for="{{formEquity}}" wx:for-index="i" wx:for-item="item">
+      <view class="_div data-v-d0bcab76 info1"><input placeholder="姓名" value="{{item.name}}" bindinput="handleProxy" data-eventid="{{'0-'+i}}" data-comkey="{{$k}}" class="_input data-v-d0bcab76" /> <input placeholder="股东性质" value="{{item.nature}}" bindinput="handleProxy" data-eventid="{{'1-'+i}}" data-comkey="{{$k}}" class="_input data-v-d0bcab76" /></view>
+      <view class="_div data-v-d0bcab76 info2"><input placeholder="工商注册号/身份证号" value="{{item.industry_reg_number}}" bindinput="handleProxy" data-eventid="{{'2-'+i}}" data-comkey="{{$k}}" class="_input data-v-d0bcab76" /></view>
+      <view class="_div data-v-d0bcab76 info3"><input placeholder="出资方式" value="{{item.capital_mode}}" bindinput="handleProxy" data-eventid="{{'3-'+i}}" data-comkey="{{$k}}" class="_input data-v-d0bcab76" /> <input placeholder="参股比例" type="digit" value="{{item.proportion}}" bindinput="handleProxy" data-eventid="{{'4-'+i}}" data-comkey="{{$k}}" class="_input data-v-d0bcab76" /></view>
+    </view>
+    <view class="_div data-v-d0bcab76 btn_add" bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}"><label class="_span data-v-d0bcab76">+</label>增加一个股权信息</view>
+  </view>
+</template>

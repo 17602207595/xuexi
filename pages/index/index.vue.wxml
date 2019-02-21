@@ -1,0 +1,15 @@
+<import src="/components/slide.vue.wxml" /><template name="7730a883">
+  <view class="_div data-v-1516f9a3 home" wx:if="{{navs.length>0}}"><template data="{{...$root[$kk+'0'], $root}}" is="ed2efb30"></template>
+    <view class="_div data-v-1516f9a3 nav">
+      <view class="_ul data-v-1516f9a3">
+        <view wx:key="nav.id" key="{{nav.id}}" wx:for="{{navs}}" wx:for-index="i" wx:for-item="nav" class="_li data-v-1516f9a3">
+          <navigator url="{{'/pages/index/detail/main?id='+nav.id}}" class="_a data-v-1516f9a3">
+            <image src="{{imgPrefix+nav.icon_img}}" class="_img data-v-1516f9a3"></image>
+            <view class="_h4 data-v-1516f9a3">{{nav.title}}</view>
+            <view class="_p data-v-1516f9a3">开始办理</view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

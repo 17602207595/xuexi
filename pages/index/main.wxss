@@ -1,0 +1,69 @@
+@import "../../common/vendor.wxss";
+
+.nav.data-v-1516f9a3 {
+  margin: 20rpx 0;
+  background: #fff;
+}
+.nav ._ul.data-v-1516f9a3 {
+  overflow: hidden;
+  padding-bottom: 40rpx;
+}
+.nav ._ul ._li.data-v-1516f9a3 {
+  width: 33.33%;
+  float: left;
+  margin-top: 40rpx;
+  text-align: center;
+}
+.nav ._ul ._li ._a.data-v-1516f9a3 {
+  display: block;
+}
+.nav ._ul ._li ._a ._img.data-v-1516f9a3 {
+  width: 100rpx;
+  height: 106rpx;
+}
+.nav ._ul ._li ._a ._h4.data-v-1516f9a3 {
+  font-size: 30rpx;
+  color: #666;
+}
+.nav ._ul ._li ._a ._p.data-v-1516f9a3 {
+  font-size: 26rpx;
+  color: #333;
+  line-height: 45rpx;
+  padding: 0 15rpx;
+  border-radius: 8rpx;
+  border: #666 solid 2rpx;
+  margin-top: 20rpx;
+  display: inline-block;
+}
+.slider {
+  width: 100%;
+  height: 385rpx;
+  overflow: hidden;
+  position: relative;
+}
+.slider .slide-image {
+  width: 100%;
+  height: 385rpx;
+}
+.slider swiper {
+  height: 385rpx;
+}
+.slider .indicator {
+  position: absolute;
+  bottom: 20rpx;
+  right: 20rpx;
+  z-index: 99;
+}
+.slider .indicator ._span {
+  display: inline-block;
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  background: #a8a8c7;
+  margin-left: 13rpx;
+}
+.slider .indicator ._span.on {
+  width: 30rpx;
+  background: #fff;
+  border-radius: 10rpx;
+}

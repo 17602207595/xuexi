@@ -1,0 +1,5 @@
+<template name="854f9e72">
+  <view class="_div data-v-75c56660 service">
+    <view class="_div data-v-75c56660 call" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}"></view> <button open-type="contact" class="_button data-v-75c56660"></button>
+  </view>
+</template>

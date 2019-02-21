@@ -1,0 +1,365 @@
+@import "../../../common/vendor.wxss";
+/**
+ * author: Di (微信小程序开发工程师)
+ * organization: WeAppDev(微信小程序开发论坛)(http://weappdev.com)
+ *         垂直微信小程序开发交流社区
+ *
+ * github地址: https://github.com/icindy/wxParse
+ *
+ * for: 微信小程序富文本解析
+ * detail : http://weappdev.com/t/wxparse-alpha0-1-html-markdown/184
+ */
+
+.wxParse {
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.8;
+}
+
+.wxParse view {
+  word-break: hyphenate;
+}
+
+.wxParse .inline {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.wxParse .div {
+  margin: 0;
+  padding: 0;
+}
+
+.wxParse .h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+.wxParse .h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+.wxParse .h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+.wxParse .h4 {
+  margin: 1.33em 0;
+}
+.wxParse .h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+.wxParse .h6 {
+  font-size: 0.67em;
+  margin: 2.33em 0;
+}
+
+.wxParse .h1,
+.wxParse .h2,
+.wxParse .h3,
+.wxParse .h4,
+.wxParse .h5,
+.wxParse .h6,
+.wxParse .b,
+.wxParse .strong {
+  font-weight: bolder;
+}
+
+.wxParse .p {
+  margin: 1em 0;
+}
+
+.wxParse .i,
+.wxParse .cite,
+.wxParse .em,
+.wxParse .var,
+.wxParse .address {
+  font-style: italic;
+}
+
+.wxParse .pre,
+.wxParse .tt,
+.wxParse .code,
+.wxParse .kbd,
+.wxParse .samp {
+  font-family: monospace;
+}
+.wxParse .pre {
+  overflow: auto;
+  background: #f5f5f5;
+  padding: 8px;
+  white-space: pre;
+  margin: 1em 0px;
+}
+.wxParse .code {
+  display: inline;
+  background: #f5f5f5;
+}
+
+.wxParse .big {
+  font-size: 1.17em;
+}
+
+.wxParse .small,
+.wxParse .sub,
+.wxParse .sup {
+  font-size: 0.83em;
+}
+
+.wxParse .sub {
+  vertical-align: sub;
+}
+.wxParse .sup {
+  vertical-align: super;
+}
+
+.wxParse .s,
+.wxParse .strike,
+.wxParse .del {
+  text-decoration: line-through;
+}
+
+.wxParse .strong,
+.wxParse .s {
+  display: inline;
+}
+
+.wxParse .a {
+  color: deepskyblue;
+}
+
+.wxParse .video {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.wxParse .video-video {
+  width: 100%;
+}
+
+.wxParse .img {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.wxParse .blockquote {
+  margin: 5px 0;
+  padding: 10px 0 10px 10px;
+  font-family: Courier, Calibri, "\5B8B\4F53";
+  background: #f5f5f5;
+  border-left: 3px solid #dbdbdb;
+}
+.wxParse .blockquote .p {
+  margin: 0;
+}
+
+.wxParse .ul, .wxParse .ol {
+  display: block;
+  margin: 1em 0;
+  padding-left: 16px;
+}
+.wxParse .ol {
+  list-style-type: disc;
+}
+.wxParse .ol {
+  list-style-type: decimal;
+}
+.wxParse .li {
+  display: list-item;
+  align-items: baseline;
+  text-align: match-parent;
+}
+.wxParse .ul .ul, .wxParse .ol .ul {
+  list-style-type: circle;
+}
+.wxParse .ol .ol .ul, .wxParse .ol .ul .ul, .wxParse .ul .ol .ul, .wxParse .ul .ul .ul {
+    list-style-type: square;
+}
+
+.wxParse .u {
+  text-decoration: underline;
+}
+.wxParse .hide {
+  display: none;
+}
+.wxParse .del {
+  display: inline;
+}
+.wxParse .figure {
+  overflow: hidden;
+}
+
+.wxParse .table {
+  width: 100%;
+}
+.wxParse .thead, .wxParse .tfoot, .wxParse .tr {
+  display: flex;
+  flex-direction: row;
+}
+.wxParse .tr {
+  width:100%;
+  display: flex;
+  border-right: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+.wxParse .th,
+.wxParse .td {
+  display: flex;
+  width: 580px;
+  overflow: auto;
+  flex: 1;
+  padding: 5px;
+  border-left: 1px solid #e0e0e0;
+}
+.wxParse .td:last {
+  border-top: 1px solid #e0e0e0;
+}
+.wxParse .th {
+  background: #f0f0f0;
+  border-top: 1px solid #e0e0e0;
+}
+
+.detail.data-v-0ebad4d3 {
+  margin-bottom: 130rpx;
+}
+.detail_box.data-v-0ebad4d3 {
+  border-radius: 6rpx;
+}
+.detail_box .info.data-v-0ebad4d3 {
+  background: #fff;
+}
+.detail_box .info .img_detail.data-v-0ebad4d3 {
+  width: 100%;
+  border-radius: 6rpx;
+}
+.detail_box .info ._h4.data-v-0ebad4d3 {
+  font-size: 30rpx;
+  color: #333;
+  padding: 0 30rpx;
+  margin-top: 15rpx;
+}
+.detail_box .info ._p.data-v-0ebad4d3 {
+  font-size: 28.000000000000004rpx;
+  color: #ff4040;
+  padding: 0 30rpx;
+  padding-bottom: 25rpx;
+  margin-top: 13rpx;
+}
+.detail_box .info ._p ._s.data-v-0ebad4d3 {
+  font-size: 24rpx;
+  color: #999;
+  margin-left: 20rpx;
+  display: inline;
+  position: relative;
+}
+.detail_box .info ._p ._s.data-v-0ebad4d3:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1rpx;
+  position: absolute;
+  left: 0;
+  top: 46%;
+  background: #999;
+  z-index: 99;
+}
+.detail_box .sort.data-v-0ebad4d3 {
+  margin-top: 20rpx;
+  padding: 0 30rpx;
+  display: flex;
+  background: #fff;
+  justify-content: space-between;
+  border-bottom: #e6e6e6 solid 2rpx;
+}
+.detail_box .sort ._p.data-v-0ebad4d3 {
+  padding: 20rpx 0;
+  width: 33.33%;
+  text-align: center;
+}
+.detail_box .sort ._p ._span.data-v-0ebad4d3 {
+  position: relative;
+  font-size: 28.000000000000004rpx;
+  color: #4c4c4c;
+  line-height: 55.00000000000001rpx;
+  height: 55rpx;
+  display: inline-block;
+}
+.detail_box .sort ._p.on ._span.data-v-0ebad4d3:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20rpx;
+  margin: 0 auto;
+  width: 30rpx;
+  height: 4rpx;
+  background: #60af00;
+}
+.detail_box .sort ._p:nth-of-type(1) ._span.data-v-0ebad4d3 {
+  float: left;
+}
+.detail_box .sort ._p:nth-of-type(3) ._span.data-v-0ebad4d3 {
+  float: right;
+}
+.detail_box .sort_con.data-v-0ebad4d3 {
+  padding: 20rpx 30rpx;
+  background: #fff;
+  margin-top: 8rpx;
+}
+.detail_box .foot.data-v-0ebad4d3 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 110.00000000000001rpx;
+  background: #fff;
+  box-sizing: border-box;
+  font-size: 0;
+  z-index: 9999;
+}
+.detail_box .foot ._button.data-v-0ebad4d3 {
+  width: 100%;
+  height: 100%;
+  line-height: 30rpx;
+  font-size: 26rpx;
+  background: none;
+}
+.detail_box .foot ._button.data-v-0ebad4d3:after {
+  border: none;
+}
+.detail_box .foot .call.data-v-0ebad4d3 {
+  width: 26%;
+  float: left;
+  text-align: center;
+}
+.detail_box .foot .call ._img.data-v-0ebad4d3 {
+  width: 45rpx;
+  height: 41rpx;
+  margin-top: 17rpx;
+  margin-bottom: 10rpx;
+}
+.detail_box .foot .call ._p.data-v-0ebad4d3 {
+  font-size: 26rpx;
+  color: #333;
+}
+.detail_box .foot .once_order.data-v-0ebad4d3 {
+  float: right;
+  width: 37%;
+  height: 100%;
+  background: #60af00;
+  font-size: 30rpx;
+  color: #fff;
+  line-height: 110.00000000000001rpx;
+  text-align: center;
+  letter-spacing: 4rpx;
+}
+.detail_box .foot .btn2.data-v-0ebad4d3 {
+  background: #fec132;
+}

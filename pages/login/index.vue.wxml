@@ -1,0 +1,5 @@
+<template name="fffd434c">
+  <view class="_div data-v-1de7af7a login" wx:if="{{code}}">
+    <view class="_p data-v-1de7af7a">为了您更好的体验本小程序，请允许授权登录</view> <button open-type="getUserInfo" bindgetuserinfo="handleProxy" class="_button data-v-1de7af7a btn-style" data-eventid="{{'0'}}" data-comkey="{{$k}}">授权登录</button>
+  </view>
+</template>

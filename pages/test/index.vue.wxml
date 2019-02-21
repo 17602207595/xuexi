@@ -1,0 +1,23 @@
+<template name="d5416ac6">
+  <view class="_div data-v-45f8f637 test" wx:if="{{test.length>0}}">
+    <view class="_h2 data-v-45f8f637">目前仅支持通信及互联网相关业务的企业筛查</view>
+    <view class="_div data-v-45f8f637 question" wx:key="i" key="{{i}}" wx:for="{{testList}}" wx:for-index="i" wx:for-item="item">
+      <view hidden="{{!(current == i)}}" class="_div data-v-45f8f637">
+        <view class="_h3 data-v-45f8f637">{{item.title}}{{item.type == '1'?"（多选）":"（单选）"}}</view>
+        <view class="_ul data-v-45f8f637">
+          <view wx:key="j" key="{{j}}" bindtap="handleProxy" data-eventid="{{'0-'+i+'-'+j}}" data-comkey="{{$k}}" wx:for="{{item.children}}" wx:for-index="j" wx:for-item="answer" class="_li data-v-45f8f637 {{[test[i].option[j] ? 'on' : '']}}">{{answer.title}}
+            <view class="_b data-v-45f8f637"></view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-45f8f637 step_2" hidden="{{!(current == test.length)}}">
+      <view class="_p data-v-45f8f637">绑定手机号接收测试结果！</view> <input type="number" placeholder="请输入手机号" name="phone" maxlength="11" value="{{postData.phone}}" bindinput="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_input data-v-45f8f637" /> <input type="number" placeholder="请输入验证码" name="code" class="_input data-v-45f8f637 code" value="{{postData.code}}" bindinput="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" /> <button bindtap="handleProxy" disabled="{{disable}}" class="_button data-v-45f8f637 btn_code" data-eventid="{{'3'}}" data-comkey="{{$k}}">{{captcha}}</button>
+    </view>
+    <view class="_div data-v-45f8f637 btn_wrap">
+      <view class="_div data-v-45f8f637 btn-style bg-btn" hidden="{{!(current != 0)}}" bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}">上一步</view>
+      <view class="_div data-v-45f8f637 btn-style" hidden="{{!(current != test.length)}}" bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}">下一步</view>
+      <view class="_div data-v-45f8f637 btn-style" hidden="{{!(current == test.length)}}" bindtap="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}">提交</view>
+    </view>
+  </view>
+</template>

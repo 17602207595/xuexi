@@ -1,0 +1,14 @@
+<template name="b4505296">
+  <view class="_div data-v-43dbed62 order">
+    <view class="_div data-v-43dbed62 step_2"><input placeholder="请输入姓名" maxlength="11" value="{{postData.name}}" bindinput="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_input data-v-43dbed62" /> <input type="number" placeholder="请输入手机号" maxlength="11" value="{{postData.phone}}" bindinput="handleProxy" bindblur="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_input data-v-43dbed62" /> <input type="number" placeholder="请输入验证码" class="_input data-v-43dbed62 code" value="{{postData.code}}" bindinput="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" /> <button bindtap="handleProxy" disabled="{{disable}}" class="_button data-v-43dbed62 btn_code" data-eventid="{{'3'}}" data-comkey="{{$k}}">{{captcha}}</button>
+      <view class="_div data-v-43dbed62 city">
+        <picker bindchange="handleProxy" range="{{provinceArray}}" class="_picker data-v-43dbed62  nature" data-eventid="{{'5'}}" data-comkey="{{$k}}">
+          <view class="_div data-v-43dbed62"><input disabled placeholder="省" value="{{provinceVal}}" bindinput="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_input data-v-43dbed62" /></view>
+        </picker>
+        <picker bindchange="handleProxy" range="{{cityArray}}" class="_picker data-v-43dbed62  nature" data-eventid="{{'7'}}" data-comkey="{{$k}}">
+          <view class="_div data-v-43dbed62"><input disabled placeholder="市" value="{{cityVal}}" bindinput="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}" class="_input data-v-43dbed62" /></view>
+        </picker>
+        <picker bindchange="handleProxy" range="{{countyArray}}" class="_picker data-v-43dbed62  nature" data-eventid="{{'9'}}" data-comkey="{{$k}}">
+          <view class="_div data-v-43dbed62"><input disabled placeholder="区" value="{{countyVal}}" bindinput="handleProxy" data-eventid="{{'8'}}" data-comkey="{{$k}}" class="_input data-v-43dbed62" /></view>
+        </picker>
+      </view> <textarea placeholder="请输入具体地址" maxlength="-1" value="{{postData.address_detail}}" bindinput="handleProxy" data-eventid="{{'10'}}" data-comkey="{{$k}}" class="_textarea data-v-43dbed62" /></view> <view class="_div data-v-43dbed62 btn-style btn" bindtap="handleProxy" data-eventid="{{'11'}}" data-comkey="{{$k}}">提交预约信息</view></view></template>

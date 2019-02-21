@@ -1,0 +1,47 @@
+<template name="6211ea28">
+  <view class="_div data-v-97efc4fe upload_info">
+    <view class="_div data-v-97efc4fe _title">
+      <view class="_p data-v-97efc4fe">请依次上传：营业执照扫描件、法人身份证扫描件、公司 章程扫描件（加盖工商局档案查询章的原件） </view>
+      <view class="_div data-v-97efc4fe imgs_1">
+        <view class="_div data-v-97efc4fe">
+          <view wx:if="{{formUpload.business_license_img}}" class="_div data-v-97efc4fe img_wrap">
+            <image src="{{imgPrefix+formUpload.business_license_img}}" bindtap="handleProxy" mode="aspectFill" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_img data-v-97efc4fe"></image>
+            <view bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_b data-v-97efc4fe">X</view>
+          </view>
+          <image wx:else src="/static/img/bg_img1.png" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_img data-v-97efc4fe"></image>
+        </view>
+        <view class="_div data-v-97efc4fe">
+          <view wx:if="{{formUpload.identity_img}}" class="_div data-v-97efc4fe img_wrap">
+            <image src="{{imgPrefix+formUpload.identity_img}}" bindtap="handleProxy" mode="aspectFill" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_img data-v-97efc4fe"></image>
+            <view bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_b data-v-97efc4fe">X</view>
+          </view>
+          <image wx:else src="/static/img/bg_img2.png" bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}" class="_img data-v-97efc4fe"></image>
+        </view>
+        <view class="_div data-v-97efc4fe">
+          <view wx:if="{{formUpload.constitution_img}}" class="_div data-v-97efc4fe img_wrap">
+            <image src="{{imgPrefix+formUpload.constitution_img}}" bindtap="handleProxy" mode="aspectFill" data-eventid="{{'6'}}" data-comkey="{{$k}}" class="_img data-v-97efc4fe"></image>
+            <view bindtap="handleProxy" data-eventid="{{'7'}}" data-comkey="{{$k}}" class="_b data-v-97efc4fe">X</view>
+          </view>
+          <image wx:else src="/static/img/bg_img3.png" bindtap="handleProxy" data-eventid="{{'8'}}" data-comkey="{{$k}}" class="_img data-v-97efc4fe"></image>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-97efc4fe _title">
+      <view class="_p data-v-97efc4fe">请填写3-5名主要、管理技术人员的身份证扫描件及电话 号码、邮箱（至少填写3名，至多填写5名）</view>
+      <view class="_div data-v-97efc4fe person">
+        <view class="_div data-v-97efc4fe person_item" wx:key="n" key="{{n}}" wx:for="{{formUpload.personnel_info_text}}" wx:for-index="n" wx:for-item="item"><input placeholder="姓名" value="{{item.name}}" bindinput="handleProxy" data-eventid="{{'9-'+n}}" data-comkey="{{$k}}" class="_input data-v-97efc4fe" /> <input type="number" placeholder="电话号码" value="{{item.phone}}" bindinput="handleProxy" bindblur="handleProxy" data-eventid="{{'10-'+n}}" data-comkey="{{$k}}" class="_input data-v-97efc4fe" /> <input placeholder="邮箱" value="{{item.email}}" bindinput="handleProxy" bindblur="handleProxy" data-eventid="{{'11-'+n}}" data-comkey="{{$k}}" class="_input data-v-97efc4fe" /></view>
+      </view>
+      <view class="_div data-v-97efc4fe imgs_2">
+        <view wx:if="{{formUpload.identity_imgs.length>0}}" class="_ul data-v-97efc4fe">
+          <view wx:key="i" key="{{i}}" class="_li data-v-97efc4fe img_wrap" wx:for="{{formUpload.identity_imgs}}" wx:for-index="i" wx:for-item="img">
+            <image src="{{imgPrefix+img}}" bindtap="handleProxy" mode="aspectFill" data-eventid="{{'12-'+i}}" data-comkey="{{$k}}" class="_img data-v-97efc4fe"></image>
+            <view bindtap="handleProxy" data-eventid="{{'13-'+i}}" data-comkey="{{$k}}" class="_b data-v-97efc4fe"></view>
+          </view>
+        </view>
+        <view wx:if="{{formUpload.identity_imgs.length<5}}" bindtap="handleProxy" data-eventid="{{'14'}}" data-comkey="{{$k}}" class="_div data-v-97efc4fe">
+          <image src="/static/img/bg_img4.png" class="_img data-v-97efc4fe"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

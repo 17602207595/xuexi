@@ -1,0 +1,30 @@
+<import src="/components/serviceC.vue.wxml" /><template name="4d9c9677">
+  <view class="_div data-v-59ac6151 person">
+    <view class="_div data-v-59ac6151 userinfo">
+      <image src="{{avatarUrl}}" class="_img data-v-59ac6151"></image>
+      <view class="_p data-v-59ac6151">{{nickName}}</view>
+    </view>
+    <view class="_div data-v-59ac6151 list">
+      <view class="_ul data-v-59ac6151">
+        <view class="_li data-v-59ac6151 bg_arrow border_bottom">
+          <navigator url="/pages/my/orderList/main" class="_a data-v-59ac6151">
+            <image src="/static/img/icon-order.png" class="_img data-v-59ac6151"></image>
+            <view class="_p data-v-59ac6151">我的订单</view>
+          </navigator>
+        </view>
+        <view class="_li data-v-59ac6151 bg_arrow border_bottom">
+          <navigator url="/pages/my/bookList/main" class="_a data-v-59ac6151">
+            <image src="/static/img/icon-card.png" class="_img data-v-59ac6151"></image>
+            <view class="_p data-v-59ac6151">我的预约</view>
+          </navigator>
+        </view>
+        <view class="_li data-v-59ac6151 bg_arrow">
+          <navigator url="/pages/my/licenseList/main" class="_a data-v-59ac6151">
+            <image src="/static/img/icon-book.png" class="_img data-v-59ac6151"></image>
+            <view class="_p data-v-59ac6151">我的牌照</view>
+          </navigator>
+        </view>
+      </view>
+    </view> <template data="{{...$root[$kk+'0'], $root}}" is="854f9e72"></template>
+  </view>
+</template>

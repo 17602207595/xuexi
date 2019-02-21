@@ -1,0 +1,34 @@
+@import "../../../common/vendor.wxss";
+
+.license .company.data-v-102d5d7e {
+  padding: 20rpx 30rpx;
+  background: #fff;
+}
+.license .company ._p.data-v-102d5d7e {
+  font-size: 26rpx;
+  color: #333;
+  line-height: 50rpx;
+}
+.license ._ul.data-v-102d5d7e {
+  padding: 30rpx;
+}
+.license ._ul ._li.data-v-102d5d7e {
+  border-radius: 12rpx;
+  background: #60af00;
+  margin-bottom: 30rpx;
+}
+.license ._ul ._li .card.data-v-102d5d7e {
+  position: relative;
+  top: 5rpx;
+  padding: 30rpx 25rpx;
+  background: #fff;
+  font-size: 30rpx;
+  color: #333;
+  border-radius: 12rpx;
+}
+.license ._ul ._li .card ._h5.data-v-102d5d7e {
+  margin-bottom: 25rpx;
+}
+.license ._ul ._li .card ._p.data-v-102d5d7e {
+  margin-top: 10rpx;
+}

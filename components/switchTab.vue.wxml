@@ -1,0 +1,7 @@
+<template name="d805ae10">
+  <view class="_div data-v-2d92b302 tab">
+    <view class="_ul data-v-2d92b302">
+      <view wx:key="i" key="{{i}}" wx:for="{{menuList}}" wx:for-index="i" wx:for-item="item" class="_li data-v-2d92b302 {{activeIndex == i ? 'on' : ''}}">{{item}}</view>
+    </view>
+  </view>
+</template>
