@@ -15,6 +15,15 @@ global.webpackJsonpMpvue([6],{
 
 
 
+
+
+
+
+
+
+
+
+
 __WEBPACK_IMPORTED_MODULE_1_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vuex__["a" /* default */]);
 
 var store = new __WEBPACK_IMPORTED_MODULE_2_vuex__["a" /* default */].Store({
